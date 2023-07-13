@@ -43,4 +43,3 @@ average_time_interval = total_time_interval / (total)
 hour, minute = int(average_time_interval / 3600), int(average_time_interval % 3600 / 60)
 print("-------------------\n"+"平均發文間隔:{}小時{}分鐘 共{}篇\n".format(hour, minute, total))
 print("最後發文時間{}\n".format( datetime_object_list[0].strftime("%m/%d %H:%M")))
-total_time_interval += time_interval
