@@ -39,7 +39,8 @@ for num in range(0,total):
         hour, minute = int(time_interval / 3600), int(time_interval % 3600 / 60)
         print("發文間隔:{}小時{}分鐘\n".format(hour, minute))
 
-average_time_interval = total_time_interval / (total - 1)
+average_time_interval = total_time_interval / (total)
 hour, minute = int(average_time_interval / 3600), int(average_time_interval % 3600 / 60)
-print("-------------------\n"+"平均發文間隔:{}小時{}分鐘\n".format(hour, minute))
+print("-------------------\n"+"平均發文間隔:{}小時{}分鐘 共{}篇\n".format(hour, minute, total))
+print("最後發文時間{}\n".format( datetime_object_list[0].strftime("%m/%d %H:%M")))
 total_time_interval += time_interval
